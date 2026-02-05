@@ -1,0 +1,260 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SynonymBar-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources",
+      "importPath" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/SynonymBarApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "SynonymBar",
+      "moduleOutputPath" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules/SynonymBar.swiftmodule",
+      "objects" : [
+        "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/ContentView.swift.o",
+        "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/SynonymBarApp.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "SynonymBar_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "app"
+      ],
+      "outputFileMapPath" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/SynonymBarApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules/SynonymBar.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/ContentView.swift",
+        "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/SynonymBarApp.swift"
+      ],
+      "tempsPath" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SynonymBar" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SynonymBar",
+      "-package-name",
+      "app",
+      "-c",
+      "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/ContentView.swift",
+      "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/SynonymBarApp.swift",
+      "-I",
+      "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "SynonymBar_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "app",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SynonymBar" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar-entitlement.plist"
+    },
+    "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/SynonymBarApp.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources"
+    },
+    "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/SynonymBarApp.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.product/Objects.LinkFileList"
+    },
+    "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

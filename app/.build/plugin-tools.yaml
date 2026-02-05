@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SynonymBar-arm64-apple-macosx26.0-debug.exe": ["<SynonymBar-arm64-apple-macosx26.0-debug.exe>"]
+  "SynonymBar-arm64-apple-macosx26.0-debug.module": ["<SynonymBar-arm64-apple-macosx26.0-debug.module>"]
+  "main": ["<SynonymBar-arm64-apple-macosx26.0-debug.exe>","<SynonymBar-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<SynonymBar-arm64-apple-macosx26.0-debug.exe>","<SynonymBar-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar":
+    is-mutated: true
+commands:
+  "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar-entitlement.plist"]
+    description: "Write auxiliary file /Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar-entitlement.plist"
+
+  "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/ContentView.swift","/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/SynonymBarApp.swift"]
+    outputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources"]
+    description: "Write auxiliary file /Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources"
+
+  "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/ContentView.swift.o","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/SynonymBarApp.swift.o"]
+    outputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.product/Objects.LinkFileList"
+
+  "/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<SynonymBar-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<SynonymBar-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<SynonymBar-arm64-apple-macosx26.0-debug.exe>"]
+
+  "<SynonymBar-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/ContentView.swift.o","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/SynonymBarApp.swift.o","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules/SynonymBar.swiftmodule"]
+    outputs: ["<SynonymBar-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.SynonymBar-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/ContentView.swift.o","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/SynonymBarApp.swift.o","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.product/Objects.LinkFileList"]
+    outputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/SynonymBar"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug","-o","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar","-module-name","SynonymBar","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_SynonymBar_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules/SynonymBar.swiftmodule","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.SynonymBar-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar-entitlement.plist"]
+    outputs: ["<SynonymBar-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/SynonymBar"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar-entitlement.plist","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar"]
+
+  "C.SynonymBar-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/ContentView.swift","/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/SynonymBarApp.swift","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources"]
+    outputs: ["/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/ContentView.swift.o","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/SynonymBarApp.swift.o","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules/SynonymBar.swiftmodule"]
+    description: "Compiling Swift Module 'SynonymBar' (2 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","SynonymBar","-emit-dependencies","-emit-module","-emit-module-path","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules/SynonymBar.swiftmodule","-output-file-map","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/output-file-map.json","-incremental","-c","@/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/SynonymBar.build/sources","-I","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/banxinbo/Documents/New project/app/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","SynonymBar_main","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","app"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/banxinbo/Documents/New project/app/Sources/SynonymBar/","/Users/banxinbo/Documents/New project/app/Package.swift","/Users/banxinbo/Documents/New project/app/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
