@@ -2,12 +2,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "SynonymBar",
+    name: "RewriteShadow",
     platforms: [.macOS(.v13)],
     products: [
-        .executable(name: "SynonymBar", targets: ["SynonymBar"])
+        .executable(name: "RewriteShadow", targets: ["RewriteShadow"])
     ],
     targets: [
-        .executableTarget(name: "SynonymBar")
+        .executableTarget(
+            name: "RewriteShadow",
+            resources: [
+                .process("Resources")
+            ]
+        )
     ]
 )

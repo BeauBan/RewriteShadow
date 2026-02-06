@@ -1,0 +1,223 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10000000000000000000000A /* app/Sources/RewriteShadow/ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000005 /* app/Sources/RewriteShadow/ContentView.swift */; };
+		10000000000000000000000B /* app/Sources/RewriteShadow/RewriteShadowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000006 /* app/Sources/RewriteShadow/RewriteShadowApp.swift */; };
+		10000000000000000000000C /* app/Sources/RewriteShadow/Resources/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000007 /* app/Sources/RewriteShadow/Resources/Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000005 /* app/Sources/RewriteShadow/ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app/Sources/RewriteShadow/ContentView.swift; sourceTree = "<group>"; };
+		100000000000000000000006 /* app/Sources/RewriteShadow/RewriteShadowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app/Sources/RewriteShadow/RewriteShadowApp.swift; sourceTree = "<group>"; };
+		100000000000000000000007 /* app/Sources/RewriteShadow/Resources/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = app/Sources/RewriteShadow/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		100000000000000000000008 /* app/RewriteShadow/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = app/RewriteShadow/Info.plist; sourceTree = "<group>"; };
+		100000000000000000000009 /* RewriteShadow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = RewriteShadow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10000000000000000000000F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000004 /* RewriteShadow */,
+				100000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000009 /* RewriteShadow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100000000000000000000004 /* RewriteShadow */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000006 /* app/Sources/RewriteShadow/RewriteShadowApp.swift */,
+				100000000000000000000005 /* app/Sources/RewriteShadow/ContentView.swift */,
+				100000000000000000000007 /* app/Sources/RewriteShadow/Resources/Assets.xcassets */,
+				100000000000000000000008 /* app/RewriteShadow/Info.plist */,
+			);
+			name = RewriteShadow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000010 /* RewriteShadow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000012 /* Build configuration list for PBXNativeTarget "RewriteShadow" */;
+			buildPhases = (
+				10000000000000000000000D /* Sources */,
+				10000000000000000000000E /* Resources */,
+				10000000000000000000000F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RewriteShadow;
+			productName = RewriteShadow;
+			productReference = 100000000000000000000009 /* RewriteShadow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 100000000000000000000011 /* Build configuration list for PBXProject "RewriteShadow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 100000000000000000000002;
+			productRefGroup = 100000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000010 /* RewriteShadow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10000000000000000000000E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000000C /* app/Sources/RewriteShadow/Resources/Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10000000000000000000000D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000000A /* app/Sources/RewriteShadow/ContentView.swift in Sources */,
+				10000000000000000000000B /* app/Sources/RewriteShadow/RewriteShadowApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		100000000000000000000013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		100000000000000000000014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		100000000000000000000015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4Z8W459XN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = app/RewriteShadow/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.rewriteshadow;
+				PRODUCT_NAME = RewriteShadow;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		100000000000000000000016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4Z8W459XN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = app/RewriteShadow/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.rewriteshadow;
+				PRODUCT_NAME = RewriteShadow;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000011 /* Build configuration list for PBXProject "RewriteShadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000013 /* Debug */,
+				100000000000000000000014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000012 /* Build configuration list for PBXNativeTarget "RewriteShadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000015 /* Debug */,
+				100000000000000000000016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000000001 /* Project object */;
+}

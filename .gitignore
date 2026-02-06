@@ -1,0 +1,15 @@
+.DS_Store
+.app
+.build/
+.swiftpm/
+*.xcworkspace
+xcuserdata/
+*.xcuserdatad/
+DerivedData/
+*.dSYM/
+*.swp
+*.swo
+dist/
+*.dmg
+*.zip
+*.xcarchive
