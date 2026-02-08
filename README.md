@@ -1,5 +1,7 @@
 # RewriteShadow
 
+[中文说明](README.zh-CN.md)
+
 Lightweight macOS menu bar assistant for Chinese writing. Generate better word choices and sentence rewrites using your own LLM API key—no backend required.
 
 <p align="center">

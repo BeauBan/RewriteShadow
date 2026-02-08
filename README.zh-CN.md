@@ -1,5 +1,7 @@
 # RewriteShadow
 
+[English](README.md)
+
 轻量级 macOS 菜单栏中文写作助手。输入词语或句子，使用你自己的大模型 API Key 生成更合适的替换词与改写结果，无需后端。
 
 <p align="center">
