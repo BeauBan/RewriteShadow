@@ -28,12 +28,7 @@ Lightweight macOS menu bar assistant for Chinese writing. Generate better word c
 
 ---
 
-## Preview
-| Word Mode | Sentence Mode |
-| --- | --- |
-| ![Word Mode](app/Sources/RewriteShadow/Resources/Assets.xcassets/AppIcon.appiconset/icon_512.png) | ![Sentence Mode](app/Sources/RewriteShadow/Resources/Assets.xcassets/AppIcon.appiconset/icon_512.png) |
 
----
 
 ## Quick Start
 **Xcode (recommended)**

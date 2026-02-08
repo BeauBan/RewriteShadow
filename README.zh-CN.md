@@ -28,12 +28,6 @@
 
 ---
 
-## 预览
-| 词语模式 | 句子模式 |
-| --- | --- |
-| ![词语模式](app/Sources/RewriteShadow/Resources/Assets.xcassets/AppIcon.appiconset/icon_512.png) | ![句子模式](app/Sources/RewriteShadow/Resources/Assets.xcassets/AppIcon.appiconset/icon_512.png) |
-
----
 
 ## 快速开始
 **Xcode（推荐）**
