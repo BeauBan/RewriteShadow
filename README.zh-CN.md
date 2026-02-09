@@ -30,6 +30,30 @@
 
 ---
 
+## 截图
+<p align="center">
+  <img src="assets/word-mode.png" width="420" />
+  <img src="assets/sentence-mode.png" width="420" />
+</p>
+<p align="center">
+  <strong>词语模式</strong> · <strong>句子模式</strong>
+</p>
+
+<p align="center">
+  <img src="assets/settings.png" width="520" />
+</p>
+<p align="center">
+  <strong>设置</strong>
+</p>
+
+<p align="center">
+  <img src="assets/menu-bar-icon.png" width="56" />
+</p>
+<p align="center">
+  <strong>菜单栏图标</strong>
+</p>
+
+---
 
 ## 快速开始
 **Xcode（推荐）**

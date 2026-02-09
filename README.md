@@ -30,7 +30,30 @@ Lightweight macOS menu bar assistant for Chinese writing. Generate better word c
 
 ---
 
+## Screenshots
+<p align="center">
+  <img src="assets/word-mode.png" width="420" />
+  <img src="assets/sentence-mode.png" width="420" />
+</p>
+<p align="center">
+  <strong>Word Mode</strong> · <strong>Sentence Mode</strong>
+</p>
 
+<p align="center">
+  <img src="assets/settings.png" width="520" />
+</p>
+<p align="center">
+  <strong>Settings</strong>
+</p>
+
+<p align="center">
+  <img src="assets/menu-bar-icon.png" width="56" />
+</p>
+<p align="center">
+  <strong>Menu Bar Icon</strong>
+</p>
+
+---
 
 ## Quick Start
 **Xcode (recommended)**
