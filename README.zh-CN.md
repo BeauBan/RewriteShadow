@@ -55,6 +55,11 @@
 
 ---
 
+## 下载
+从 GitHub Releases 获取最新版本：[下载 RewriteShadow](https://github.com/BeauBan/RewriteShadow/releases)
+
+---
+
 ## 快速开始
 **Xcode（推荐）**
 1. 打开 `RewriteShadow.xcodeproj`
@@ -94,13 +99,6 @@ swift run
 ## 项目结构
 - `app/` SwiftUI 源码（SwiftPM）
 - `RewriteShadow.xcodeproj/` 用于构建与分发
-
----
-
-## Roadmap
-- 写作风格预设
-- 更细的改写与语气控制
-- 复制与历史记录优化
 
 ---
 

@@ -55,6 +55,11 @@ Lightweight macOS menu bar assistant for Chinese writing. Generate better word c
 
 ---
 
+## Download
+Get the latest build from GitHub Releases: [Download RewriteShadow](https://github.com/BeauBan/RewriteShadow/releases)
+
+---
+
 ## Quick Start
 **Xcode (recommended)**
 1. Open `RewriteShadow.xcodeproj`
@@ -94,13 +99,6 @@ Your API key stays on your machine and is never written to this repo.
 ## Project Structure
 - `app/` SwiftUI app source (SwiftPM)
 - `RewriteShadow.xcodeproj/` Xcode project for building and distribution
-
----
-
-## Roadmap
-- Preset profiles for writing styles
-- Better tone controls and rewriting guidance
-- Export and clipboard history
 
 ---
 
